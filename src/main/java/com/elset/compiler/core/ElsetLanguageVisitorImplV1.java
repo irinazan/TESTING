@@ -541,7 +541,7 @@ public class ElsetLanguageVisitorImplV1 implements ElsetLanguageVisitor<String> 
     @Override
     public String visit(ParseTree parseTree) {
         String out = parseTree.accept(this);
-        System.out.println(out);
+//        System.out.println(out);
         return String.format(CompilerFields.STATIC_CONTENT, name, out);
     }
 
