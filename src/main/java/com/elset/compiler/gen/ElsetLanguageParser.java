@@ -101,7 +101,7 @@ public class ElsetLanguageParser extends Parser {
 
 	@Override
 	public String[] getRuleNames() {
-		return new String[0];
+		return makeRuleNames();
 	}
 
 	@Override
