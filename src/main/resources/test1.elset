@@ -1,0 +1,48 @@
+TEN = 10;
+
+sub_program int fun(a, b)
+    begin
+    sub_program float inner_fun(n)
+        begin
+        return 42.0 + n;
+        end
+        
+        n = a + b;
+        res = inner_fun(n)
+        return res;
+    end
+
+main_program
+    begin
+        a = 1;
+        b = 10;
+        c = call fun(a, b);
+        el1 = "first";
+        el2 = "second";
+        s = {el1, el2};
+        print(s);
+        s.remove(el2);
+        print(s);
+        h = s * s;
+        print(h);
+        i = 0;
+        while (i < 5)
+            begin
+                i = i + 1;
+                print(i);
+            end
+        if (i == 5)
+            begin
+                el3 = "third";
+                m = {el3};
+                k = s / m;
+                print(k);
+            end
+        then
+            begin
+            end
+        for (e : s)
+            begin
+                print(e);
+            end
+    end

@@ -1,0 +1,37 @@
+var = 1;
+
+sub_program int sub(var3)
+    begin
+        print(var3);
+        return var3;
+    end
+
+main_program
+    begin
+        print(2);
+        var2 = 3;
+        var3 = call sub(var2);
+        el = "elem";
+        s = {el, el};
+        s.remove(el);
+        s2 = s * s;
+        print(s);
+        for (e : s2)
+            begin
+                print(e);
+            end
+        while (var2 < 8)
+            begin
+            var2 = var2 + 2;
+            print("Added");
+            end
+        if (var2 == 8)
+            begin
+                print("This is the right condition");
+            end
+        then
+            begin
+                print("This is a wrong condition");
+            end
+    end
+

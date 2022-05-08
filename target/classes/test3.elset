@@ -1,0 +1,45 @@
+FIVE = 5;
+
+sub_program int inc(a)
+    begin
+        var = a + 1;
+        return var;
+    end
+    
+ sub_program int dec(a)
+    begin
+        var = a - 1;
+        return var;
+    end
+
+main_program
+    begin
+        a = 1;
+        c = call inc(a);
+        d = call dec(a);
+        el1 = "first";
+        el2 = "second";
+        s = {el1, el2};
+        h = s * s * s;
+        print(h);
+        i = 0;
+        while (i < 5)
+            begin
+                i = i + 1;
+                print(i);
+            end
+        if (i == 5)
+            begin
+                el3 = "third";
+                m = {el3};
+                k = s / m;
+                print(k);
+            end
+        then
+            begin
+            end
+        for (e : s)
+            begin
+                print(e);
+            end
+    end

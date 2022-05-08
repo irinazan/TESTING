@@ -1,0 +1,41 @@
+global int TEN = 10;
+
+sub_program int fun(int a)
+    begin
+        int var = a + 1;
+        return var;
+    end
+
+main_program
+    begin
+        int a = 1;
+        int const c = call fun(a);
+        element el1 = "first";
+        element el2 = "second";
+        set s = {el1, el2};
+        print(s);
+        s.remove(el2);
+        print(s);
+        set h = s * s;
+        print(h);
+        int i = 0;
+        while (i < 5)
+            begin
+                i = i + 1;
+                print(i);
+            end
+        if (i == 5)
+            begin
+                element el3 = "third";
+                set m = {el3};
+                set k = s / m;
+                print(k);
+            end
+        then
+            begin
+            end
+        for (element e : s)
+            begin
+                print(e);
+            end
+    end
